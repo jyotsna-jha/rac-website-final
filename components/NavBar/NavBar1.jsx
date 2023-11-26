@@ -35,7 +35,7 @@ function Navbar() {
         <div className="md:hidden w-full absolute left-0 top-20 bg-white text-gray-900 py-4">
           <MobileNavLink href="/">Home</MobileNavLink>
           <MobileNavLink href="/about">About</MobileNavLink>
-          <MobileNavLink href="/ourteam">Our Team</MobileNavLink>
+          <MobileNavLink href="/ourTeam">Our Team</MobileNavLink>
           <MobileNavLink href="/contact">Contact</MobileNavLink>
           <MobileNavLink href="/alumni">Alumni</MobileNavLink>
           <MobileNavLink href="/projects">Projects</MobileNavLink>
