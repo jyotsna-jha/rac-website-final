@@ -56,7 +56,7 @@ const teamMembers = [
   {
     name: 'Jyotsna Jha',
     position: 'Web Developer',
-    image: '/assets/jyotsnaj.jpg',
+    image: '/assets/jjjj.jpg',
   },
   {
     name: 'Navraj Dahal',
