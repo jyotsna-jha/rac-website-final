@@ -25,7 +25,7 @@ function Navbar() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-2xl text-orange-400"
+            className="text-2xl text-orange-200"
           >
             {isOpen ? '×' : '☰'}
           </button>

@@ -80,7 +80,7 @@ const OurTeam = () => {
     <div className="container mx-auto my-8 p-8 text-center">
       <h1 className="text-3xl font-semibold mb-4 text-[#000]">Our Team</h1>
       <p className="text-gray-500 mb-8">
-        Meet our tech enthusiasts at the Robotics Club. We are passionate about pushing the boundaries of technology and innovation.
+        Meet our tech enthusiasts at the Robotics Club.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-8">
