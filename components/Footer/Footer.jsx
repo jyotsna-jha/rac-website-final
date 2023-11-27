@@ -30,7 +30,7 @@ const Footer = () => {
           <RiArrowUpSLine size={24} />
         </button>
       </div>
-      <div className="mt-4 text-sm text-[#dcdde1]">
+      <div className="mt-4 text-sm text-gray-400">
         &copy; {new Date().getFullYear()} Robotics & Automation Center
       </div>
     </footer>
