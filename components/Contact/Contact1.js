@@ -10,7 +10,7 @@ const ContactCard = () => {
         <h2 className="text-4xl font-bold text-[#000] mt-20 mb-10 relative inline-block font-sans">
           <span className="relative">
             Contact Us
-            <div className="block w-16 h-2 bg-orange-300 absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
+            <div className="block w-16 h-1 bg-orange-300 absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
           </span>
         </h2>
 
