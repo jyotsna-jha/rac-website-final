@@ -1,111 +1,40 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 
-const Achievement = () => {
+const AlumniSuccessStories = () => {
+  const successStories = [
+    { name: 'Micromouse Competition', achievement: '2nd Runner Up, IIT Bombay, 2022', image: '/assets/micromouse5.jpg' },
+    { name: 'Micromouse Competition', achievement: '2nd Runner Up, IIT Bombay, 2022', image: '/assets/micromouse2.jpg' },
+    { name: 'Rowboatics', achievement: ' Winner, IIT Bombay, 2020', image: '/assets/rowboatics.png' },
+    
+  ];
+
   return (
-    <div className="text-center pt-10 px-2 lg:px-10 pb-10">
-       <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold mb-4 px-4 relative underline-none font-sans">
-        <span className="relative z-10">
-          <Image
-            src="/assets/achievementicon.png"
-            alt="Achievement Icon"
-            className="inline-block mr-2"
-            width={80}
-            height={80}
-          />
-          Our Achievements
-        </span>
-      </h1>
-      <div className="flex flex-wrap gap-4 md:gap-8 justify-center">
-        {/* First Card */}
-        <div className="bg-gradient-to-b from-yellow-200 to-purple-200 rounded-lg overflow-hidden shadow-lg w-full md:w-64 h-96 mb-4 mx-2 md:mx-4 transform transition-transform duration-300 hover:scale-105 md:w-1/2">
-          <Image
-            src="/assets/micromouse5.jpg"
-            className="card-img-top"
-            alt="achievementimg1"
-            layout="responsive"
-            width={300}
-            height={250}
-          />
-          <div className="p-2">
-            <h3 className="font-bold text-base md:text-lg mb-1 text-black font-sans">
-              Micromouse Competition
-            </h3>
-            <p className="text-gray-600 text-xs md:text-sm font-poppins">
-              2nd Runner Up, IIT Bombay, 2022
-            </p>
-            <a
-              href="https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="mt-2">
-                <button className="mt-4 sm:mt-6 bg-black text-white rounded-full py-1 px-4 sm:py-1.5 sm:px-6 md:py-2 md:px-8 hover:bg-white hover:text-[#161617] hover:border hover:border-[#161617] transition-all duration-500 transform hover:scale-105">
+    <div className="text-center py-8 mx-4">
+      <h2 className="relative inline-block text-xl md:text-2xl lg:text-3xl font-bold text-[#000] mt-6 mb-2 p-2">
+        Meet Our Alumni
+        <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-orange-300 h-1 w-20"></span>
+      </h2>
+      <div className="flex flex-wrap justify-center">
+        {successStories.map((story, index) => (
+          <div key={index} className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
+            <div className="bg-gradient-to-br from-yellow-200 to-purple-300 rounded-lg shadow-md transition-transform transform hover:scale-105 overflow-hidden">
+              <Image src={story.image} alt={story.name} width={400} height={400} className="rounded-t-md object-cover" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold my-2 text-[#000]">{story.name}</h3>
+                <p className="text-gray-500">{story.achievement}</p>
+                <button className="mt-2 px-4 py-2 bg-[#000] text-white rounded-full hover:bg-white hover:text-gray-800 border border-gray-800 transition">
                   View
                 </button>
               </div>
-            </a>
-          </div>
-        </div>
-
-        {/* Second Card */}
-        <div className="bg-gradient-to-b  from-yellow-200 to-purple-200 rounded-lg overflow-hidden shadow-lg w-full md:w-64 h-96 mb-4 mx-2 md:mx-4 transform transition-transform duration-300 hover:scale-105 md:w-1/2">
-          <Image
-            src="/assets/micromouse2.jpg"
-            className="card-img-top"
-            alt="..."
-            layout="responsive"
-            width={300}
-            height={250}
-          />
-          <div className="p-2">
-            <h3 className="font-bold text-base md:text-lg mb-1 text-black font-sans">
-              Micromouse Competition
-            </h3>
-            <p className="text-gray-600 text-xs md:text-sm font-poppins">
-              2nd Runner Up, IIT Bombay, 2022
-            </p>
-            <a
-              href="https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="mt-2">
-                <button className="mt-4 sm:mt-6 bg-black text-white rounded-full py-1 px-4 sm:py-1.5 sm:px-6 md:py-2 md:px-8 hover:bg-white hover:text-[#161617] hover:border hover:border-[#161617] transition-all duration-500 transform hover:scale-105">
-                  View
-                </button>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        {/* Third Card */}
-        <div className="bg-gradient-to-b  from-yellow-200 to-purple-200 rounded-lg overflow-hidden shadow-lg w-full md:w-64 h-96 mb-4 mx-2 md:mx-4 transform transition-transform duration-300 hover:scale-105 md:w-1/2">
-          <Image
-            src="/assets/rowboatics.png"
-            className="card-img-top"
-            alt="..."
-            layout="responsive"
-            width={300}
-            height={250}
-          />
-          <div className="p-2">
-            <h3 className="font-bold text-base md:text-lg mb-1 text-black font-sans">
-              Rowboatics Competition
-            </h3>
-            <p className="text-gray-600 text-xs md:text-sm font-poppins">
-              Winner, IIT Bombay, 2020
-            </p>
-            <div className="mt-2">
-              <button className="mt-4 sm:mt-6 bg-black text-white rounded-full py-1 px-4 sm:py-1.5 sm:px-6 md:py-2 md:px-8 hover:bg-white hover:text-[#161617] hover:border hover:border-[#161617] transition-all duration-500 transform hover:scale-105">
-                View
-              </button>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default Achievement;
+export default AlumniSuccessStories;
+
