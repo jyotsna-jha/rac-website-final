@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap, Power1 } from 'gsap';
+import React from 'react';
 import Image from 'next/image';
 
 const RacImageGallery = () => {
-  const imageRefs = useRef([]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const images = [
-    // ... (your image data remains the same)
     { id: 1, src: '/assets/rac3.jpg', alt: 'Rac Image 1' },
     { id: 2, src: '/assets/rac4.jpg', alt: 'Rac Image 2' },
     { id: 3, src: '/assets/rac5.jpg', alt: 'Rac Image 3' },
@@ -24,37 +19,6 @@ const RacImageGallery = () => {
     { id: 25, src: '/assets/rac27.jpg', alt: 'Rac Image 25' },
   ];
 
-  useEffect(() => {
-    const timeline = gsap.timeline({ repeat: -1 });
-
-    images.forEach((image, index) => {
-      timeline.to(imageRefs.current[index], {
-        scale: 1.2,
-        duration: 1,
-        ease: Power1.easeInOut,
-      });
-
-      timeline.to(imageRefs.current[index], {
-        scale: 1,
-        duration: 1,
-        ease: Power1.easeInOut,
-      });
-
-      if (index < images.length - 1) {
-        timeline.addLabel(`image-${index + 1}`, '+=2'); // Change image every 2 seconds
-      }
-    });
-
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex < images.length - 1 ? prevIndex + 1 : 0
-      );
-      timeline.play(`image-${currentImageIndex}`);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [currentImageIndex, images]);
-
   const openImageInNewTab = (src) => {
     window.open(src, '_blank');
   };
@@ -63,14 +27,13 @@ const RacImageGallery = () => {
     <div className="container mx-auto py-8 px-8 bg-white">
       <div className="text-xl md:text-2xl lg:text-3xl font-bold text-[#000] text-center relative p-2 mb-4">
         Visual Voyage
-        <div className="block w-16 h-2 bg-orange-300 absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
+        <div className="block w-16 h-1 bg-orange-300 absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-        {images.map((image, index) => (
+        {images.map((image) => (
           <div
             key={image.id}
-            ref={(el) => (imageRefs.current[index] = el)}
-            className="relative overflow-hidden cursor-pointer transition-transform duration-200 rounded-lg bg-white transform mx-4"
+            className="relative overflow-hidden cursor-pointer transition-transform duration-200 rounded-lg bg-white transform mx-4 hover:scale-110"
             onClick={() => openImageInNewTab(image.src)}
           >
             <Image
