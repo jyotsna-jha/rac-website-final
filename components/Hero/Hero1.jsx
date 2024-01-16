@@ -1,4 +1,3 @@
-// hero.jsx
 "use client";
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
@@ -48,7 +47,6 @@ const Herosection = ({ title, subtitle }) => {
 
           <div className="hidden md:flex justify-end items-center">
             <div ref={lottieContainerRef} id="lottie-animation" style={{ width: '80%', height: '80%' }}></div>
-            {/* Adjust the width and height of the lottieContainerRef */}
           </div>
         </div>
       </div>

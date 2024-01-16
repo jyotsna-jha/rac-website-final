@@ -1,4 +1,3 @@
-// pages/OurTeam.js
 
 import React from 'react';
 

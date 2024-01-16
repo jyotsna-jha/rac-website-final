@@ -1,4 +1,3 @@
-// hero.jsx
 "use client";
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";

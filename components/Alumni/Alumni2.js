@@ -1,4 +1,3 @@
-// pages/AlumniJourney.js
 "use client"
 import React, { useRef } from "react";
 import Image from "next/image";
@@ -25,7 +24,6 @@ const AlumniJourney = ({ name, image, description }) => {
 
 const AlumniJourneyPage = () => {
   const alumniStories = [
-    // Your alumni stories here
     {
         name: "John Doe",
         image: "/assets/Nitesh.jpg",
@@ -118,7 +116,7 @@ const AlumniJourneyPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Set the autoplay speed to 2 seconds
+    autoplaySpeed: 2000, 
     pauseOnHover: true,
   };
 

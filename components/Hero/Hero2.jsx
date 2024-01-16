@@ -21,7 +21,7 @@ const AboutHome = () => {
             className="w-[90%] h-[70%] md:rounded-2xl object-cover"
             alt="Campus Chief"
             width={300}
-            height={200} // Adjusted height to make the image smaller
+            height={200} 
           />
         </div>
         <div className="flex-1 flex flex-col gap-3" id="text-container">

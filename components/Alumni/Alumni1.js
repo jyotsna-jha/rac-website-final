@@ -1,4 +1,3 @@
-// AlumniHeader.js
 
 import React from 'react';
 

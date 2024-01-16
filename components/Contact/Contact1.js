@@ -1,4 +1,3 @@
-// components/Contact/ContactCard.js
 "use client"
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import Link from "next/link";
@@ -39,6 +38,8 @@ const ContactCard = () => {
               Phone Number
             </h2>
             <p className="text-gray-600 mb-2">9864410395</p>
+            <p className="text-gray-600 mb-2">9823161343</p>
+
 
             <p className="text-gray-600 mb-4">Response time: 9am to 9pm</p>
             <Link href="tel:+9779852090365" className="text-orange-400 hover:underline font-bold">

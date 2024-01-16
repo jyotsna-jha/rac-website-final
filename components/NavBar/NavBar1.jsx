@@ -1,7 +1,7 @@
-"use client"
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +20,14 @@ function Navbar() {
           <NavLink href="/ourTeam">Our Team</NavLink>
           <NavLink href="/contact">Contact</NavLink>
           <NavLink href="/alumni">Alumni</NavLink>
-          <NavLink href="/projects">Projects</NavLink>
+          <NavLink href="/project">Projects</NavLink>
         </div>
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-2xl text-orange-200"
           >
-            {isOpen ? '×' : '☰'}
+            {isOpen ? "×" : "☰"}
           </button>
         </div>
       </div>
@@ -38,21 +38,19 @@ function Navbar() {
           <MobileNavLink href="/ourTeam">Our Team</MobileNavLink>
           <MobileNavLink href="/contact">Contact</MobileNavLink>
           <MobileNavLink href="/alumni">Alumni</MobileNavLink>
-          <MobileNavLink href="/projects">Projects</MobileNavLink>
+          <MobileNavLink href="/project">Projects</MobileNavLink>
         </div>
       )}
     </nav>
   );
 }
 
-// Custom NavLink component for desktop
 const NavLink = ({ href, children }) => (
   <Link href={href}>
     <span className="hover:text-orange-300 py-2 px-4">{children}</span>
   </Link>
 );
 
-// Custom NavLink component for mobile
 const MobileNavLink = ({ href, children }) => (
   <Link href={href}>
     <span className="block py-2 px-4">{children}</span>
