@@ -12,7 +12,7 @@ const Achievement = () => {
   return (
     <div className="text-center py-8 mx-4">
       <h2 className="relative inline-block text-xl md:text-2xl lg:text-3xl font-bold text-[#000] mt-6 mb-2 p-2">
-        Meet Our Alumni
+        Our Achievements
         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-orange-300 h-1 w-20"></span>
       </h2>
       <div className="flex flex-wrap justify-center">
