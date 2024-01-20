@@ -3,8 +3,8 @@ import NextImage from 'next/image';
 
 const Achievement = () => {
   const achievementCard = [
-    { name: 'Micromouse Competition', achievement: '2nd Runner Up, IIT Bombay, 2022', image: '/assets/micromouse5.jpg', link: 'https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX' },
-    { name: 'Micromouse Competition', achievement: '2nd Runner Up, IIT Bombay, 2022', image: '/assets/micromouse2.jpg', link: 'https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX' },
+    { name: 'Micromouse Competition', achievement: '1st Runner Up, IIT Bombay, 2022', image: '/assets/micromouse5.jpg', link: 'https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX' },
+    { name: 'Micromouse Competition', achievement: '1st Runner Up, IIT Bombay, 2022', image: '/assets/micromouse2.jpg', link: 'https://drive.google.com/drive/folders/1ZvO1aXkVKVZ2cgqXInEUFy3mumFhQnzX' },
     { name: 'Rowboatics', achievement: ' Winner, IIT Bombay, 2020', image: '/assets/rowboatics.png', link: '' },
   ];
 
