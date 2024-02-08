@@ -8,7 +8,7 @@ const teamMembers = [
     image: '/assets/president.jpg',
   },
   {
-    name: 'Pukar Giri',
+    name: 'Pukar Khanal',
     position: 'Vice President',
     image: '/assets/pukar.jpg',
   },
@@ -22,6 +22,12 @@ const teamMembers = [
     position: 'Vice Secretary',
     image: '/assets/looza2.jpg',
   },
+
+  {
+    name: 'Kalyan Kumar Shrestha',
+    position: 'Treasurer',
+    image: '/assets/kk.jpg',
+  },
   {
     name: 'Arun Koirala',
     position: 'Inventory Manager',
@@ -30,7 +36,7 @@ const teamMembers = [
   {
     name: 'Shakshi Kejriwal',
     position: 'Inventory Manager',
-    image: '/assets/sakshi4.jpeg',
+    image: '/assets/sakshi56.jpg',
   },
   {
     name: 'Ayush Raj Shah',
@@ -62,11 +68,7 @@ const teamMembers = [
     position: 'General Member',
     image: '/assets/navraj.jpg',
   },
-  {
-    name: 'Arbaj Ansari',
-    position: 'General Member',
-    image: '/assets/arbaj.jpg',
-  },
+ 
   {
     name: 'Ramesh Kathayat',
     position: 'General Member',
