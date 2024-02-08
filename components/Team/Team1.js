@@ -64,7 +64,7 @@ const teamMembers = [
     image: '/assets/jjjj.jpg',
   },
   {
-    name: 'Navraj Dahal',
+    name: 'Navaraj Dahal',
     position: 'General Member',
     image: '/assets/navraj.jpg',
   },
