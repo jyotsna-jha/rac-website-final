@@ -56,6 +56,14 @@ const teamMembers = [
     phone: 'Ph.: 9866116023',
     social: 'ig: @where_is_saurab',
   },
+  {
+    name: 'Sunil Tamang',
+    position: 'Graphics Designer',
+    image: '/assets/sunil.jpg',
+    batch: 'Batch: 080 BIE',
+    phone: 'Ph.: 9847356954',
+    social: 'ig: @_sxnil.tg_',
+  },
 
   {
     name: 'Pranjal Barnwal',
